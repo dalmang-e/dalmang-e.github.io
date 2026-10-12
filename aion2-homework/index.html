@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
 <script type="application/ld+json">
-[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "데바로그", "item": "https://dalmang-e.github.io/"}, {"@type": "ListItem", "position": 2, "name": "아이온2 숙제 총정리", "item": "https://dalmang-e.github.io/aion2-homework/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "아이온2 일일 초기화는 몇 시인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매일 오전 5시예요. 악몽·슈고·차원 침공 열쇠가 이때 충전돼요."}}, {"@type": "Question", "name": "아이온2 주간 초기화는 언제인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매주 수요일 오전 5시예요. 각성전과 루드라·침식의 정화소·무스펠·비탄의 설원이 다시 채워져요."}}, {"@type": "Question", "name": "오드 에너지는 언제 차나요?", "acceptedAnswer": {"@type": "Answer", "text": "2시부터 3시간마다(2·5·8·11·14·17·20·23시) 15씩 차고, 기본 오드는 840까지 모여요."}}, {"@type": "Question", "name": "악몽은 몇 회까지 모이나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본 14회까지예요. 꽉 찬 상태로 오전 5시가 지나면 그날 충전분이 버려져요."}}]}]
+[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "데바로그", "item": "https://dalmang-e.github.io/"}, {"@type": "ListItem", "position": 2, "name": "아이온2 숙제 총정리", "item": "https://dalmang-e.github.io/aion2-homework/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "아이온2 일일 초기화는 몇 시인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매일 오전 5시예요. 악몽·슈고·차원 침공 열쇠가 이때 충전돼요."}}, {"@type": "Question", "name": "아이온2 주간 초기화는 언제인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매주 수요일 오전 5시예요. 각성전과 루드라·침식의 정화소·무스펠·비탄의 설원이 다시 채워져요."}}, {"@type": "Question", "name": "오드 에너지는 언제 차나요?", "acceptedAnswer": {"@type": "Answer", "text": "2시부터 3시간마다(2·5·8·11·14·17·20·23시) 10씩(멤버십이면 15씩) 차고, 기본 오드는 840까지 모여요."}}, {"@type": "Question", "name": "악몽은 몇 회까지 모이나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본 14회까지예요. 꽉 찬 상태로 오전 5시가 지나면 그날 충전분이 버려져요."}}]}]
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
@@ -248,7 +248,7 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
     <div class="clocks" aria-label="다음 초기화까지 남은 시간">
       <div class="clk"><span>다음 일일 초기화</span><b data-next="daily">매일 오전 5시</b></div>
       <div class="clk"><span>다음 주간 초기화</span><b data-next="weekly">수요일 오전 5시</b></div>
-      <div class="clk"><span>다음 오드 +15</span><b data-next="od">3시간마다</b></div>
+      <div class="clk"><span>다음 오드 충전</span><b data-next="od">3시간마다</b></div>
     </div>
     <nav class="toc" aria-label="목차"><a href="#reset">초기화 시간</a><a href="#daily">매일 숙제</a><a href="#weekly">매주 숙제</a><a href="#od">오드 에너지</a><a href="#loss">놓치면 손해</a><a href="#q">자주 묻는 질문</a></nav>
   </section>
@@ -260,7 +260,7 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
       <tbody>
         <tr><td>매일</td><td data-label="언제">매일 오전 5시</td><td data-label="바뀌는 것">악몽·슈고 +2회, 차원 침공 열쇠 +1개, 사명 5회 다시 시작</td></tr>
         <tr><td>매주</td><td data-label="언제">수요일 오전 5시</td><td data-label="바뀌는 것">각성전 3회, 루드라·침식의 정화소·무스펠·비탄의 설원 각 1회로 다시 채워짐</td></tr>
-        <tr><td>3시간마다</td><td data-label="언제">2·5·8·11·14·17·20·23시</td><td data-label="바뀌는 것">오드 에너지 +15</td></tr>
+        <tr><td>3시간마다</td><td data-label="언제">2·5·8·11·14·17·20·23시</td><td data-label="바뀌는 것">오드 에너지 +10 (멤버십 +15)</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -296,19 +296,19 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
   <section class="box full" id="od">
     <h2>오드 에너지 충전 규칙</h2>
     <ul>
-      <li><b>기본 오드</b>는 매일 2·5·8·11·14·17·20·23시에 <b>15씩</b> 차고, 최대 <b>840</b>까지 모여요.</li>
+      <li><b>기본 오드</b>는 매일 2·5·8·11·14·17·20·23시에 <b>10씩</b>(멤버십이면 15씩) 차고, 최대 <b>840</b>까지 모여요.</li>
       <li><b>충전 오드</b>는 아이템으로 채우는 오드예요. 최대 <b>2,000</b>이고, 시간이 지나도 저절로 차지 않아요.</li>
       <li>가방 속 오드 아이템은 <b>오드 에너지(각인) 1개 = 40</b>, <b>작은 오드 에너지(각인) 1개 = 10</b>만큼 충전돼요. 우편으로 받은 오드는 먼저 가방에 들어가고, 아이템을 써야 오드가 차요.</li>
     </ul>
     <h3>기본 오드가 840까지 차는 시간</h3>
-    <p>0에서 시작하면 3시간마다 15씩 차서 56번, 약 7일이 걸려요. 840이 된 뒤에는 더 차지 않으니 그전에 써 두는 게 좋아요.</p>
+    <p>0에서 시작하면 3시간마다 10씩 차서 84번, 약 10일 반이 걸려요. 멤버십이면 15씩 56번, 약 7일이에요. 840이 된 뒤에는 더 차지 않으니 그전에 써 두는 게 좋아요.</p>
   </section>
 
   <section class="box full" id="loss">
     <h2>놓치면 손해 보는 것</h2>
     <div class="warn"><b>악몽 14회</b>꽉 찬 채로 오전 5시가 지나면 그날 충전 2회가 사라져요.</div>
     <div class="warn"><b>각성전</b>수요일 오전 5시 전에 기본 3회를 다 쓰지 않으면 남은 기본 횟수는 다시 3회로 덮여요.</div>
-    <div class="warn"><b>오드 840</b>기본 오드가 840이면 3시간마다 차는 15가 쌓이지 않아요.</div>
+    <div class="warn"><b>오드 840</b>기본 오드가 840이면 3시간마다 차는 오드가 쌓이지 않아요.</div>
     <div class="warn"><b>성역 4곳</b>루드라·침식의 정화소·무스펠·비탄의 설원은 수요일 오전 5시 전에 다녀오지 않으면 그 주 기회가 사라져요.</div>
   </section>
 
@@ -324,7 +324,7 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
     <dl class="qa">
       <div><dt>아이온2 일일 초기화는 몇 시인가요?</dt><dd>매일 오전 5시예요. 악몽·슈고·차원 침공 열쇠가 이때 충전돼요.</dd></div>
       <div><dt>아이온2 주간 초기화는 언제인가요?</dt><dd>매주 수요일 오전 5시예요. 각성전과 루드라·침식의 정화소·무스펠·비탄의 설원이 다시 채워져요.</dd></div>
-      <div><dt>오드 에너지는 언제 차나요?</dt><dd>2시부터 3시간마다(2·5·8·11·14·17·20·23시) 15씩 차고, 기본 오드는 840까지 모여요.</dd></div>
+      <div><dt>오드 에너지는 언제 차나요?</dt><dd>2시부터 3시간마다(2·5·8·11·14·17·20·23시) 10씩(멤버십이면 15씩) 차고, 기본 오드는 840까지 모여요.</dd></div>
       <div><dt>악몽은 몇 회까지 모이나요?</dt><dd>기본 14회까지예요. 꽉 찬 상태로 오전 5시가 지나면 그날 충전분이 버려져요.</dd></div>
     </dl>
   </section>
