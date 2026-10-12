@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이온2 숙제 총정리 | 일일·주간 초기화 시간, 오드 충전 - 데바로그</title>
+<meta name="description" content="아이온2 일일 초기화(오전 5시)와 주간 초기화(수요일 오전 5시), 오드 에너지 충전 시간, 악몽·각성전·루드라·무스펠 횟수까지 한 페이지에 정리했어요.">
+<link rel="canonical" href="https://dalmang-e.github.io/aion2-homework/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="데바로그">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="아이온2 숙제 총정리 | 일일·주간 초기화 시간, 오드 충전 - 데바로그">
+<meta property="og:description" content="아이온2 일일 초기화(오전 5시)와 주간 초기화(수요일 오전 5시), 오드 에너지 충전 시간, 악몽·각성전·루드라·무스펠 횟수까지 한 페이지에 정리했어요.">
+<meta property="og:url" content="https://dalmang-e.github.io/aion2-homework/">
+<meta property="og:image" content="https://dalmang-e.github.io/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141129">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "데바로그", "item": "https://dalmang-e.github.io/"}, {"@type": "ListItem", "position": 2, "name": "아이온2 숙제 총정리", "item": "https://dalmang-e.github.io/aion2-homework/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "아이온2 일일 초기화는 몇 시인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매일 오전 5시예요. 악몽·슈고·차원 침공 열쇠가 이때 충전돼요."}}, {"@type": "Question", "name": "아이온2 주간 초기화는 언제인가요?", "acceptedAnswer": {"@type": "Answer", "text": "매주 수요일 오전 5시예요. 각성전과 루드라·침식의 정화소·무스펠·비탄의 설원이 다시 채워져요."}}, {"@type": "Question", "name": "오드 에너지는 언제 차나요?", "acceptedAnswer": {"@type": "Answer", "text": "2시부터 3시간마다(2·5·8·11·14·17·20·23시) 15씩 차고, 기본 오드는 840까지 모여요."}}, {"@type": "Question", "name": "악몽은 몇 회까지 모이나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본 14회까지예요. 꽉 찬 상태로 오전 5시가 지나면 그날 충전분이 버려져요."}}]}]
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+@font-face{font-family:"Galmuri11";font-weight:700;src:url(gal-b.woff2) format("woff2")}
+@font-face{font-family:"Galmuri11";font-weight:400;src:url(gal-r.woff2) format("woff2")}
+/* A 분위기(밤하늘, 도트 제목, 계단 모서리) + B 구성. 흰 테두리 없이 면 색 차이로 구분하고, 도트 글꼴은 큰 제목에만. 단일 다크 세계. */
+:root{
+  --night:#141129; --panel:#1f1a3f; --panel2:#2a2453; --line:#352e66;
+  --text:#f6f3ff; --sub:#d3cdf2; --dim:#a29cce;
+  --violet:#9aa4ff; --mint:#8fe5c9; --pink:#ff9cc0; --gold:#ffd66b;
+  --px:"Galmuri11","Noto Sans KR",monospace; --body:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;
+  --notch:polygon(0 8px,4px 8px,4px 4px,8px 4px,8px 0,calc(100% - 8px) 0,calc(100% - 8px) 4px,calc(100% - 4px) 4px,calc(100% - 4px) 8px,100% 8px,100% calc(100% - 8px),calc(100% - 4px) calc(100% - 8px),calc(100% - 4px) calc(100% - 4px),calc(100% - 8px) calc(100% - 4px),calc(100% - 8px) 100%,8px 100%,8px calc(100% - 4px),4px calc(100% - 4px),4px calc(100% - 8px),0 calc(100% - 8px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.75;
+  background-image:radial-gradient(#ffffff16 1px,transparent 1.5px),radial-gradient(#ffffff0d 1px,transparent 1.5px);background-size:48px 48px,77px 77px;background-position:0 0,20px 30px}
+a{color:var(--mint)}
+img{max-width:100%}
+.pixel{image-rendering:pixelated}
+.px{font-family:var(--px)}
+
+.bar{background:#100d22;position:sticky;top:env(safe-area-inset-top,0px);z-index:10;box-shadow:0 1px 0 var(--line)}
+.bar .in{max-width:1040px;margin:0 auto;padding-inline:16px;display:flex;align-items:center;gap:26px;height:60px;overflow-x:auto}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;white-space:nowrap}
+.logo img{width:34px;height:34px}
+.bar nav{display:flex;gap:22px;font-size:14px}
+.bar nav a{color:var(--dim);text-decoration:none;white-space:nowrap;padding-block:6px}
+.bar nav a:hover,.bar nav a:focus-visible{color:var(--text);outline:none;box-shadow:inset 0 -2px 0 var(--mint)}
+.bar .get{margin-left:auto;background:var(--mint);color:#141129;font-size:14px;font-weight:700;padding:7px 14px;text-decoration:none;white-space:nowrap;clip-path:var(--notch)}
+
+main{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:30px 0;display:grid;grid-template-columns:1fr 320px;gap:22px;align-items:stretch}
+#notes{flex:1}
+/* 패치노트 길이가 바뀌어도 관리표 높이가 흔들리지 않게: 오른쪽 열은 행 높이에 기여하지 않고, 넘치는 패치노트는 잘라서 흐리게 처리 */
+@media (min-width:861px){.side{height:0;min-height:100%;display:flex;flex-direction:column;gap:22px}#notes{min-height:0;display:flex;flex-direction:column;overflow:hidden}#notes .rels{flex:1;min-height:0;overflow:hidden;-webkit-mask-image:linear-gradient(#000 calc(100% - 36px),transparent);mask-image:linear-gradient(#000 calc(100% - 36px),transparent)}#notes .more{margin-top:10px}}
+.rel li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;list-style:none;margin-left:-14px}.rel li::before{content:"•";margin-right:8px;color:var(--sub)}
+.feat .ovl,.feat .hud,.feat .strip,.feat .cgrid{margin-top:auto}
+.feat p{margin-bottom:16px!important}
+.full{grid-column:1/-1}
+.col,.side{display:flex;flex-direction:column;gap:22px;min-width:0}
+
+.box{background:var(--panel);padding:24px;position:relative;min-width:0;clip-path:var(--notch)}
+.box h2{font-family:var(--px);font-size:22px;font-weight:700;color:var(--gold);margin:0 0 16px;line-height:1.3;display:flex;align-items:center;gap:10px}
+.box h2::before{content:"";width:10px;height:10px;background:var(--gold);flex:none}
+.tabname{display:none}
+
+.intro{display:grid;grid-template-columns:112px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.intro img{width:112px;height:112px;animation:bob 1.6s steps(2) infinite}
+@keyframes bob{50%{transform:translateY(-5px)}}
+.intro h1{font-family:var(--px);font-size:33px;font-weight:700;line-height:1.35;margin:0 0 8px}
+.intro h1 b{color:var(--mint)}
+.intro h1 .kick{display:block;font-family:var(--body);font-size:14px;font-weight:700;color:var(--sub);line-height:1.4;margin-bottom:6px}
+.intro p{margin:0;color:var(--sub);word-break:keep-all}
+.intro p .lead{color:var(--text);font-weight:700}
+.cursor{display:inline-block;width:8px;height:16px;background:var(--mint);vertical-align:-2px;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.grid{overflow-x:auto;background:#181433}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;text-align:center;white-space:nowrap;border-bottom:1px solid var(--line)}
+thead th{background:var(--panel2);font-size:14px;font-weight:700;color:var(--text)}
+th:first-child,td:first-child{text-align:left;color:var(--sub);font-weight:500}
+tbody tr:last-child td{border-bottom:0}
+.tag{font-weight:700}
+.ok{color:var(--mint)}.no{color:var(--gold)}.risk{color:var(--pink)}
+.risk::before{content:"▲ ";font-size:10px;vertical-align:1px}
+.cap{font-size:13px;color:var(--dim);margin-top:10px}
+
+.ver{font-size:14px;color:var(--sub)}
+.dlbtn{display:block;text-align:center;background:var(--mint);color:#141129;font-family:var(--px);font-size:22px;font-weight:700;padding:14px 10px;margin:14px 0 16px;text-decoration:none;clip-path:var(--notch)}
+.dlbtn:hover{background:#a6f0d7}
+.dlbtn:active{transform:translateY(2px)}
+.req{background:#3a2140;padding:12px 14px;font-size:15px;color:var(--text);clip-path:var(--notch)}
+.req b{color:var(--pink);display:block;font-size:14px}
+dl.spec{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:16px 0 0;font-size:15px}
+dl.spec dt{color:var(--dim)}
+dl.spec dd{margin:0}
+ul.skills{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+ul.skills li{display:grid;grid-template-columns:40px 1fr;gap:12px;font-size:15px;color:var(--sub);line-height:1.65}
+ul.skills .ic{width:40px;height:40px;background:var(--panel2);display:grid;place-items:center;font-size:18px;font-weight:700;color:var(--violet);clip-path:var(--notch)}
+ul.skills b{color:var(--text);display:block;font-weight:700}
+
+ol.tut{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ol.tut li{display:grid;grid-template-columns:46px 1fr;gap:12px;background:var(--panel2);padding:14px 16px;clip-path:var(--notch)}
+ol.tut .n{font-family:var(--px);font-size:22px;font-weight:700;color:var(--mint);line-height:1.2}
+ol.tut b{display:block}
+ol.tut span{color:var(--sub);font-size:15px}
+kbd{font-family:var(--body);font-size:13px;font-weight:700;background:var(--panel2);padding:1px 6px;color:var(--text)}
+.notes p{margin:0 0 14px;font-size:15px;color:var(--sub)}
+.rel{margin-bottom:14px}
+.rel ul{margin:4px 0 0;padding-left:18px;font-size:15px;color:var(--sub)}
+.rel li{margin-bottom:2px}
+.more{font-size:14px;font-weight:700;text-decoration:none}
+.notes .v{font-weight:700;color:var(--violet);display:block;font-size:14px}
+
+.qa{margin:0;display:grid}
+.qa div{display:grid;grid-template-columns:300px 1fr;gap:24px;padding:14px 0;border-top:1px solid var(--line);min-width:0}
+.qa div:first-child{border-top:0;padding-top:4px}
+.qa dt{font-weight:700}
+.qa dt::before{content:"Q. ";color:var(--gold)}
+.qa dd{margin:0;color:var(--sub);font-size:15px}
+@media (max-width:700px){.qa div{grid-template-columns:1fr;gap:4px}}
+
+footer{max-width:1040px;margin:36px auto 0;padding-inline:16px;padding-block:0 40px;font-size:13px;color:var(--dim);text-align:center;line-height:1.9}
+
+
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.feats3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.feat{background:var(--panel2);padding:20px;clip-path:var(--notch);min-width:0;display:flex;flex-direction:column}
+.ft{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.feat h3{margin:0;font-size:18px;font-weight:700;line-height:1.3}
+.feat p{margin:0;color:var(--sub);font-size:15px;line-height:1.7}
+.feat .ic{width:40px;height:40px;background:#181433;display:grid;place-items:center;font-size:18px;font-weight:700;color:var(--violet);clip-path:var(--notch);flex:none}
+.feat.warn .ic{color:var(--pink)}
+/* 실제 오버레이 모양(앱 overlay-aether.css 값) */
+.ovl,.hud{margin-top:16px;background:rgba(12,12,15,.92);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:10px;color:#f4f4f5;font-size:13px}
+.ovl{display:grid;gap:6px}
+.toast{background:rgba(139,233,200,.07);border:1px solid rgba(139,233,200,.22);border-left:3px solid #8be9c8;padding:5px 10px;display:grid;gap:4px}
+.th{display:flex;align-items:center;gap:6px;flex-wrap:wrap;line-height:1.3}
+.ck{width:15px;height:15px;border-radius:50%;background:#8be9c8;color:#0c0c0f;font-size:10px;font-weight:800;display:inline-grid;place-items:center;flex:none}
+.tl{color:#8be9c8;font-size:12px;font-weight:600}
+.tt{font-size:14px;font-weight:500}
+.tc{display:flex;gap:6px}.tc span{border-radius:999px;padding:0 8px;background:rgba(255,255,255,.06);font-size:12px;font-variant-numeric:tabular-nums}
+.hud{padding:12px 14px}
+.hud-h{display:flex;align-items:center;gap:8px;font-size:15px}
+.ocat{display:inline-flex;filter:drop-shadow(0 0 4px rgba(139,233,200,.35))}
+.ocat rect{fill:url(#ocat-fur)}.ocat .e{fill:#0c0c0f}.ocat .n{fill:#ff9fb8}
+.ocat-b{animation:ocat-bob 1.2s steps(1) infinite}
+@keyframes ocat-bob{0%,74%{transform:translateY(0)}75%,100%{transform:translateY(-1px)}}
+.hud-h .dots{margin-left:-6px;letter-spacing:1px}
+.dots span{display:inline-block;animation:odot 1.2s steps(1) infinite;color:#8b8b95}
+.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
+@keyframes odot{0%,60%{opacity:1}61%,100%{opacity:.15}}
+.hud-h span{color:#8b8b95}.hud-h .lock{margin-left:auto;font-size:13px}
+.hud-r{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ri{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);border-radius:999px;padding:3px 12px 3px 6px;font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ri img{width:20px;height:20px}
+em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
+.hud-p{text-align:right;color:#8b8b95;font-size:11px;margin-top:6px}
+/* 관리표 위 계정 공유 자원 줄(앱 모양) */
+.strip{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;background:#0f0c20;padding:12px;border-radius:12px}
+.sc{display:inline-flex;align-items:baseline;gap:8px;border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:6px 12px;font-size:14px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sc i{font-style:normal;color:#a1a1aa;font-size:13px}.sc b{font-weight:700}
+.sc .acc{color:#8be9c8;font-weight:700}
+.sc.wide{flex-wrap:wrap}
+.cgrid{margin-top:16px;overflow-x:auto;background:#0f0c20;border-radius:12px;padding:6px 8px}
+.cgrid table{min-width:360px;font-size:14px}
+.cgrid th,.cgrid td{padding:7px 10px;border-bottom:1px solid #ffffff12}
+.cgrid thead th{background:none;font-size:13px;color:var(--sub)}
+.cgrid tbody tr:last-child td{border-bottom:0}
+.cb{display:inline-grid;place-items:center;width:20px;height:20px;border:2px solid #5a5490;border-radius:5px;font-size:12px;font-weight:800;vertical-align:middle}
+.cb.on{background:var(--mint);border-color:var(--mint);color:#141129}
+.cb{color:transparent}
+.cb.on{color:#141129}
+.cb.a1,.cb.a2,.cb.a3{animation:6s steps(1) infinite}
+.cb.a1{animation-name:ck1}.cb.a2{animation-name:ck2}.cb.a3{animation-name:ck3}
+@keyframes ck1{0%,19%{background:none;border-color:#5a5490;color:transparent;transform:none}20%{background:var(--mint);border-color:var(--mint);color:#141129;transform:scale(1.25)}23%,90%{background:var(--mint);border-color:var(--mint);color:#141129;transform:none}91%,100%{background:none;border-color:#5a5490;color:transparent}}
+@keyframes ck2{0%,37%{background:none;border-color:#5a5490;color:transparent;transform:none}38%{background:var(--mint);border-color:var(--mint);color:#141129;transform:scale(1.25)}41%,90%{background:var(--mint);border-color:var(--mint);color:#141129;transform:none}91%,100%{background:none;border-color:#5a5490;color:transparent}}
+@keyframes ck3{0%,55%{background:none;border-color:#5a5490;color:transparent;transform:none}56%{background:var(--mint);border-color:var(--mint);color:#141129;transform:scale(1.25)}59%,90%{background:var(--mint);border-color:var(--mint);color:#141129;transform:none}91%,100%{background:none;border-color:#5a5490;color:transparent}}
+.toast.n1,.toast.n2,.toast.n3{animation:6s linear infinite}
+.toast.n1{animation-name:tn1}.toast.n2{animation-name:tn2}.toast.n3{animation-name:tn3}
+@keyframes tn1{0%,19%{opacity:0;transform:translateY(6px)}23%,90%{opacity:1;transform:none}93%,100%{opacity:0}}
+@keyframes tn2{0%,37%{opacity:0;transform:translateY(6px)}41%,90%{opacity:1;transform:none}93%,100%{opacity:0}}
+@keyframes tn3{0%,55%{opacity:0;transform:translateY(6px)}59%,90%{opacity:1;transform:none}93%,100%{opacity:0}}
+@media (max-width:860px){.feats{grid-template-columns:1fr}.feats3{grid-template-columns:1fr}}
+#how ol.tut{grid-template-columns:repeat(4,1fr)}
+#how ol.tut li{grid-template-columns:1fr;gap:4px}
+@media (max-width:860px){#how ol.tut{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){#how ol.tut{grid-template-columns:1fr}}
+@media (max-width:860px){main{display:flex;flex-direction:column;align-items:stretch;gap:22px}.side{display:contents}#about{order:1}#dl{order:2}#sk{order:3}#how{order:4}#notes{order:5}#faq{order:6}}
+@media (max-width:520px){.intro{grid-template-columns:72px 1fr;gap:14px}.intro img{width:72px;height:72px}.intro h1{font-size:22px}.bar .in{gap:16px}.bar nav{gap:14px;font-size:13px}.logo{font-size:18px}.logo img{width:28px;height:28px}.bar .get{display:none}.box{padding:18px}}
+</style>
+<style>
+.g h1{font-family:var(--px);font-size:30px;line-height:1.35;margin:0 0 10px}
+.g .lead{color:var(--sub);margin:0 0 6px;word-break:keep-all}
+.g .meta{color:var(--dim);font-size:13px;margin:0}
+.g .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.g .toc a{background:var(--panel2);color:var(--text);text-decoration:none;font-size:14px;padding:6px 12px}
+.g h3{font-size:17px;margin:22px 0 8px;color:var(--text)}
+.g p,.g li{color:var(--sub);word-break:keep-all;line-height:1.75}
+.g ul{padding-left:20px;margin:6px 0}
+.g td,.g th{white-space:normal;text-align:left;word-break:keep-all}
+.g th{color:var(--dim);font-weight:500;font-size:13px}
+.g td:first-child{font-weight:700;color:var(--text);white-space:nowrap}
+.g .wrap{overflow-x:auto}
+.g td.il{white-space:nowrap;line-height:1.7}
+.tag{display:inline-block;font-size:12px;padding:1px 7px;margin-left:6px;background:var(--panel2);color:var(--violet);font-weight:500;vertical-align:1px}
+.tag.acc{color:var(--gold)}
+.warn{border-left:3px solid var(--pink);background:var(--panel2);padding:12px 16px;margin:14px 0}
+.warn{word-break:keep-all}
+.warn b{display:block;color:var(--pink);margin-bottom:2px}
+.cta{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+.cta p{margin:0}
+.cta .dlbtn{margin:0;padding:12px 22px;font-size:18px;white-space:nowrap}
+.verify{outline:2px dashed var(--gold);outline-offset:2px}
+@media (max-width:520px){.g h1{font-size:22px}.cta{grid-template-columns:1fr}}
+.hero{background:linear-gradient(135deg,var(--panel2),var(--panel) 60%)}
+.crumb{font-size:13px;color:var(--dim);margin:0 0 14px}
+.crumb a{color:var(--sub)}
+.g .intro{margin-bottom:18px}
+.clocks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.clk{background:var(--night);padding:12px 14px;clip-path:var(--notch)}
+.clk span{display:block;font-size:12px;color:var(--dim);margin-bottom:2px}
+.clk b{font-family:var(--px);font-size:20px;color:var(--mint);font-variant-numeric:tabular-nums}
+@media (max-width:520px){.clocks{grid-template-columns:1fr}.clk{display:flex;justify-content:space-between;align-items:center}.clk span{margin:0}.clk b{font-size:17px}}
+@media (max-width:520px){.g table{min-width:0}.g thead{display:none}.g tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}.g td{display:flex;gap:12px;border:0;padding:3px 0}.g td:first-child{font-size:16px;padding-bottom:6px}.g td[data-label]::before{content:attr(data-label);flex:0 0 84px;color:var(--dim);font-size:13px;font-weight:500}.g td:empty{display:none}.g td.il{white-space:normal}}
+</style>
+</head>
+<body>
+<header class="bar" id="top"><div class="in">
+  <a class="logo px" href="/" style="text-decoration:none;color:inherit"><img class="pixel" src="/assets/icon.png" alt="">데바로그</a>
+  <nav aria-label="메뉴"><a href="/">홈</a><a href="/#sk">소개</a><a href="/#how">사용법</a><a href="/#faq">FAQ</a></nav>
+  <a class="get" href="/#dl">▶ 다운로드</a>
+</div></header>
+
+<main class="g">
+  <section class="box full hero">
+    <p class="crumb"><a href="/">데바로그</a> › 아이온2 숙제 총정리</p>
+    <div class="intro">
+      <img class="pixel" src="/assets/cat.png" alt="">
+      <div>
+        <h1>아이온2 숙제 총정리</h1>
+        <p class="lead">일일·주간 초기화 시간, 오드 에너지 충전, 악몽·각성전·성역 횟수까지 아이온2 캐릭터가 챙겨야 할 숙제를 한 페이지에 모았어요.</p>
+        <p class="meta">2026년 10월 기준 · 한국 서버 시간</p>
+      </div>
+    </div>
+    <div class="clocks" aria-label="다음 초기화까지 남은 시간">
+      <div class="clk"><span>다음 일일 초기화</span><b data-next="daily">매일 오전 5시</b></div>
+      <div class="clk"><span>다음 주간 초기화</span><b data-next="weekly">수요일 오전 5시</b></div>
+      <div class="clk"><span>다음 오드 +15</span><b data-next="od">3시간마다</b></div>
+    </div>
+    <nav class="toc" aria-label="목차"><a href="#reset">초기화 시간</a><a href="#daily">매일 숙제</a><a href="#weekly">매주 숙제</a><a href="#od">오드 에너지</a><a href="#loss">놓치면 손해</a><a href="#q">자주 묻는 질문</a></nav>
+  </section>
+
+  <section class="box full" id="reset">
+    <h2>초기화 시간 한눈에 보기</h2>
+    <div class="wrap"><table>
+      <thead><tr><th>구분</th><th>언제</th><th>바뀌는 것</th></tr></thead>
+      <tbody>
+        <tr><td>매일</td><td data-label="언제">매일 오전 5시</td><td data-label="바뀌는 것">악몽·슈고 +2회, 차원 침공 열쇠 +1개, 사명 5회 다시 시작</td></tr>
+        <tr><td>매주</td><td data-label="언제">수요일 오전 5시</td><td data-label="바뀌는 것">각성전 3회, 루드라·침식의 정화소·무스펠·비탄의 설원 각 1회로 다시 채워짐</td></tr>
+        <tr><td>3시간마다</td><td data-label="언제">2·5·8·11·14·17·20·23시</td><td data-label="바뀌는 것">오드 에너지 +15</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="box full" id="daily">
+    <h2>매일 숙제 (오전 5시 초기화)</h2>
+    <div class="wrap"><table>
+      <thead><tr><th>숙제</th><th>매일 충전</th><th>최대</th><th>알아 둘 점</th></tr></thead>
+      <tbody>
+        <tr><td>악몽<span class="tag">캐릭터</span></td><td data-label="매일 충전">+2회</td><td data-label="최대">14회</td><td data-label="알아 둘 점">14회가 꽉 차 있으면 다음 충전분은 버려져요. 충전권으로 얻은 추가 횟수는 따로 쌓여요.</td></tr>
+        <tr><td>슈고<span class="tag acc">계정 공유</span></td><td data-label="매일 충전">+2회</td><td data-label="최대">14회</td><td data-label="알아 둘 점">계정의 모든 캐릭터가 같은 횟수를 나눠 써요. 추가 횟수는 따로 쌓여요.</td></tr>
+        <tr><td>차원 침공<span class="tag acc">계정 공유</span></td><td data-label="매일 충전">열쇠 +1개</td><td data-label="최대">7개</td><td data-label="알아 둘 점">들어갈 때가 아니라 보상을 받을 때 열쇠가 줄어요.</td></tr>
+        <tr><td>사명<span class="tag acc">계정 공유</span></td><td data-label="매일 충전">다시 시작</td><td data-label="최대">5회</td><td data-label="알아 둘 점">계정 전체에서 5회까지 완료할 수 있어요.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="box full" id="weekly">
+    <h2>매주 숙제와 성역 (수요일 오전 5시 초기화)</h2>
+    <div class="wrap"><table>
+      <thead><tr><th>숙제</th><th>매주 기본</th><th>레벨</th><th>아이템 레벨</th><th>알아 둘 점</th></tr></thead>
+      <tbody>
+        <tr><td>각성전<span class="tag">캐릭터</span></td><td data-label="매주 기본">3회</td><td data-label="레벨">-</td><td data-label="아이템 레벨">-</td><td data-label="알아 둘 점">기본 횟수를 먼저 쓰고, 추가 횟수는 초기화돼도 남아요.</td></tr>
+        <tr><td>루드라<span class="tag">캐릭터</span></td><td data-label="매주 기본">1회</td><td data-label="레벨">45</td><td data-label="아이템 레벨">2700</td><td data-label="알아 둘 점"></td></tr>
+        <tr><td>침식의 정화소<span class="tag">캐릭터</span></td><td data-label="매주 기본">1회</td><td data-label="레벨">45</td><td data-label="아이템 레벨">3500</td><td data-label="알아 둘 점"></td></tr>
+        <tr><td>무스펠의 성배<span class="tag">캐릭터</span></td><td data-label="매주 기본">1회</td><td data-label="레벨">45</td><td data-label="아이템 레벨" class="il">일반 4300<br>어려움 4500</td><td data-label="알아 둘 점">두 난이도가 횟수 1회를 같이 써요.</td></tr>
+        <tr><td>비탄의 설원<span class="tag">캐릭터</span></td><td data-label="매주 기본">1회</td><td data-label="레벨">50</td><td data-label="아이템 레벨" class="il">쉬움 5800<br>일반 6000<br>어려움 6200</td><td data-label="알아 둘 점">세 난이도가 횟수 1회를 같이 써요.</td></tr>
+      </tbody>
+    </table></div>
+    <p>루드라·침식의 정화소·무스펠의 성배·비탄의 설원은 모두 <b>마지막 보스를 잡아야</b> 그 주 완료로 쳐요.</p>
+  </section>
+
+  <section class="box full" id="od">
+    <h2>오드 에너지 충전 규칙</h2>
+    <ul>
+      <li><b>기본 오드</b>는 매일 2·5·8·11·14·17·20·23시에 <b>15씩</b> 차고, 최대 <b>840</b>까지 모여요.</li>
+      <li><b>충전 오드</b>는 아이템으로 채우는 오드예요. 최대 <b>2,000</b>이고, 시간이 지나도 저절로 차지 않아요.</li>
+      <li>가방 속 오드 아이템은 <b>오드 에너지(각인) 1개 = 40</b>, <b>작은 오드 에너지(각인) 1개 = 10</b>만큼 충전돼요. 우편으로 받은 오드는 먼저 가방에 들어가고, 아이템을 써야 오드가 차요.</li>
+    </ul>
+    <h3>기본 오드가 840까지 차는 시간</h3>
+    <p>0에서 시작하면 3시간마다 15씩 차서 56번, 약 7일이 걸려요. 840이 된 뒤에는 더 차지 않으니 그전에 써 두는 게 좋아요.</p>
+  </section>
+
+  <section class="box full" id="loss">
+    <h2>놓치면 손해 보는 것</h2>
+    <div class="warn"><b>악몽 14회</b>꽉 찬 채로 오전 5시가 지나면 그날 충전 2회가 사라져요.</div>
+    <div class="warn"><b>각성전</b>수요일 오전 5시 전에 기본 3회를 다 쓰지 않으면 남은 기본 횟수는 다시 3회로 덮여요.</div>
+    <div class="warn"><b>오드 840</b>기본 오드가 840이면 3시간마다 차는 15가 쌓이지 않아요.</div>
+    <div class="warn"><b>성역 4곳</b>루드라·침식의 정화소·무스펠·비탄의 설원은 수요일 오전 5시 전에 다녀오지 않으면 그 주 기회가 사라져요.</div>
+  </section>
+
+  <section class="box full">
+    <div class="cta">
+      <p><b>캐릭터가 여러 개면 이걸 다 기억하기 어렵죠.</b><br>데바로그를 켜 두고 게임하면 위 숙제가 캐릭터별 관리표에 저절로 채워지고, 손해 볼 횟수는 빨갛게 알려 줘요. 무료 Windows 앱이에요.</p>
+      <a class="dlbtn" href="/#dl">▶ 데바로그 받기</a>
+    </div>
+  </section>
+
+  <section class="box full" id="q">
+    <h2>자주 묻는 질문</h2>
+    <dl class="qa">
+      <div><dt>아이온2 일일 초기화는 몇 시인가요?</dt><dd>매일 오전 5시예요. 악몽·슈고·차원 침공 열쇠가 이때 충전돼요.</dd></div>
+      <div><dt>아이온2 주간 초기화는 언제인가요?</dt><dd>매주 수요일 오전 5시예요. 각성전과 루드라·침식의 정화소·무스펠·비탄의 설원이 다시 채워져요.</dd></div>
+      <div><dt>오드 에너지는 언제 차나요?</dt><dd>2시부터 3시간마다(2·5·8·11·14·17·20·23시) 15씩 차고, 기본 오드는 840까지 모여요.</dd></div>
+      <div><dt>악몽은 몇 회까지 모이나요?</dt><dd>기본 14회까지예요. 꽉 찬 상태로 오전 5시가 지나면 그날 충전분이 버려져요.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer>데바로그는 아이온2(AION2) 숙제 관리를 도와주는 비공식 팬 프로그램입니다. AION2 및 관련 상표는 NCSOFT의 자산입니다. 게임 정보는 업데이트로 바뀔 수 있어요.</footer>
+<script>
+(function(){
+  var H=3600000,D=24*H;
+  function kstNow(){return Date.now()+9*H}
+  function fmt(ms){var m=Math.ceil(ms/60000),d=Math.floor(m/1440),h=Math.floor(m%1440/60),mm=m%60;
+    return d?d+'일 '+h+'시간':h?h+'시간 '+mm+'분':mm+'분'}
+  function next(){var n=kstNow(),day=Math.floor(n/D)*D,t;
+    t=day+5*H; if(t<=n)t+=D; var daily=t-n;
+    var dow=new Date(day).getUTCDay(), add=(3-dow+7)%7; t=day+add*D+5*H; if(t<=n)t+=7*D; var weekly=t-n;
+    var h0=day+2*H-3*H; t=h0; while(t<=n)t+=3*H; var od=t-n;
+    return {daily:daily,weekly:weekly,od:od}}
+  function tick(){var r=next();document.querySelectorAll('[data-next]').forEach(function(el){el.textContent=fmt(r[el.getAttribute('data-next')])+' 남음'})}
+  tick();setInterval(tick,30000);
+})();
+</script>
+</body>
+</html>
