@@ -1,6 +1,7 @@
 // GitHub 릴리스에서 최신 버전·설치 파일·패치노트를 불러온다. 실패하면 HTML에 적힌 내용을 그대로 둔다.
+// 패치노트는 최대 8개를 넣고, 넓은 화면은 칸 높이만큼만 보이고(아래 흐림) 좁은 화면은 CSS로 2개만 보인다.
 (function () {
-  var API = 'https://api.github.com/repos/dalmang-e/DevaLog-Releases/releases?per_page=5';
+  var API = 'https://api.github.com/repos/dalmang-e/DevaLog-Releases/releases?per_page=10';
   function day(iso) {
     var d = new Date(new Date(iso).getTime() + 9 * 3600 * 1000);
     return d.getUTCFullYear() + '.' + String(d.getUTCMonth() + 1).padStart(2, '0') + '.' + String(d.getUTCDate()).padStart(2, '0');
@@ -23,7 +24,7 @@
       var more = notes && notes.querySelector('.more');
       if (!notes || !more) return;
       var shown = list.map(function (r) { return { r: r, b: bullets(r.body) }; })
-        .filter(function (x) { return x.b.length; }).slice(0, 2);
+        .filter(function (x) { return x.b.length; }).slice(0, 8);
       if (!shown.length) return;
       var box = notes.querySelector('.rels') || notes;
       box.querySelectorAll('.rel').forEach(function (el) { el.remove(); });
