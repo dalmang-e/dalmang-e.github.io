@@ -8,8 +8,7 @@
   }
   function bullets(body) {
     return (body || '').split(/\r?\n/).filter(function (l) { return /^[-*] \S/.test(l); })
-      .map(function (l) { return l.slice(2).replace(/<[^>]*>|\*\*|`/g, '').trim(); })
-      .filter(function (t) { return t !== '내부 개선'; }).slice(0, 3);
+      .map(function (l) { return l.slice(2).replace(/<[^>]*>|\*\*|`/g, '').trim(); }).slice(0, 3);
   }
   fetch(API, { headers: { Accept: 'application/vnd.github+json' } })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
