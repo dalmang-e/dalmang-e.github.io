@@ -199,6 +199,87 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
 @media (max-width:560px){#how ol.tut{grid-template-columns:1fr}}
 @media (max-width:860px){main{display:flex;flex-direction:column;align-items:stretch;gap:22px}.side{display:contents}#about{order:1}#dl{order:2}#sk{order:3}#how{order:4}#notes{order:5}#faq{order:6}}
 @media (max-width:520px){.intro{grid-template-columns:72px 1fr;gap:14px}.intro img{width:72px;height:72px}.intro h1{font-size:22px}.bar .in{gap:16px}.bar nav{gap:14px;font-size:13px}.logo{font-size:18px}.logo img{width:28px;height:28px}.bar .get{display:none}.box{padding:18px}}
+.feat .ledger,.feat .lg-tbl{overflow-x:auto}
+.lg-tbl table{width:100%;min-width:300px;border-collapse:collapse;font-size:12px}
+.lg-tbl th,.lg-tbl td{padding:6px 4px;text-align:right;border-bottom:1px solid #2c2e34;background:none;white-space:nowrap}
+.lg-tbl th{color:#8b8f98;font-weight:400;font-size:11px}
+.lg-tbl th:first-child,.lg-tbl td:first-child{text-align:left}
+.lg-tbl tbody tr:last-child td{border-bottom:0}
+.abyss{margin-top:auto}
+.ft .lab{margin-left:auto;font-size:12px;font-weight:700;color:#8be9c8;border:1px solid rgba(139,233,200,.4);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.ledger{background:#111214;border-radius:12px;padding:14px;display:grid;gap:10px;font-variant-numeric:tabular-nums;color:#ececf1}
+.lg-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.lg-top b{font-size:14px}
+.lg-tabs{display:inline-flex;border:1px solid #2c2e34;border-radius:8px;padding:2px}
+.lg-tabs span{font-size:12px;color:#8b8f98;padding:3px 10px;border-radius:6px}
+.lg-tabs span.on{color:#ececf1;background:#2a2c32;font-weight:700}
+.lg-now{border:1px solid #2c2e34;border-radius:10px;background:#17181c;padding:10px 12px;display:grid;gap:2px}
+.lg-now small,.lg-kpi small,.lg-h small{font-size:11px;color:#8b8f98}
+.lg-now div{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.lg-now b{font-size:22px;font-weight:700}
+.lg-now .up{font-size:13px}
+.up{color:#5ee0b0}.dn{color:#f0a487}
+.lg-kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.lg-kpi span{border:1px solid #2c2e34;border-radius:10px;background:#17181c;padding:8px 10px;display:grid;gap:2px;min-width:0}
+.lg-kpi b{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lg-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13px;font-weight:700;border-left:3px solid #5ee0b0;padding-left:8px}
+.lg-chart{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;height:96px;align-items:end;border-bottom:1px solid #3a3d44;padding:0 4px}
+.lg-chart .b{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;position:relative}
+.lg-chart em{width:100%;background:#5aa88f;display:block}
+.lg-chart .now em{background:#8be9c8}
+.lg-chart i{position:absolute;bottom:-18px;font-style:normal;font-size:11px;color:#8b8f98}
+.lg-chart .now i{color:#8be9c8}
+.lg-chart+.lg-h{margin-top:14px}
+.lg-bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:#ffffff12}
+.lg-bar .d,.lg-leg .d{background:#5ee0b0}.lg-bar .x,.lg-leg .x{background:#8f9bff}.lg-bar .o,.lg-leg .o{background:#5a5d66}
+.lg-leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:#c9ccd3}
+.lg-leg span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lg-leg em{width:10px;height:10px;border-radius:3px;display:inline-block}
+.abyss{display:grid;gap:10px;background:#111214;border-radius:12px;padding:12px}
+.ab-pill{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:6px 8px 6px 12px;border:1px solid #2c2e34;border-radius:14px;background:#1a1b1f;font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ab-pill .t{font-weight:700;color:#4fd2f0}
+.ab-pill .i{display:inline-flex;gap:5px;align-items:baseline}
+.ab-pill .i i{font-style:normal;color:#8b8f98;font-size:11px}
+.ab-pill .i b{color:#ececf1;font-weight:700}
+.ab-pill .i.nx b{color:#5ee0b0}
+.ab-pill .left{color:#5ee0b0;font-weight:700;padding:2px 10px;border-radius:999px;background:rgba(94,224,176,.16);border:1px solid rgba(94,224,176,.45)}
+.ab-grid{overflow-x:auto;border:1px solid #2c2e34;border-radius:10px}
+.ab-grid table{min-width:340px;font-size:13px;border-collapse:collapse;width:100%}
+.ab-grid th,.ab-grid td{padding:8px 6px;text-align:center;border-bottom:1px solid #2c2e34;background:none;white-space:nowrap}
+.ab-grid th:first-child,.ab-grid td:first-child{text-align:left;border-right:1px solid #2c2e34}
+.ab-grid thead th{font-size:12px;color:#ececf1;font-weight:700}
+.ab-grid thead th:first-child{color:#8b8f98;font-weight:400}
+.ab-grid tbody td{border-bottom:0;color:#ececf1}
+.ab-grid .lb{display:inline-flex;align-items:center;gap:6px}
+.ab-grid .gear{display:inline-grid;place-items:center;width:20px;height:20px;border:1px solid #2c2e34;border-radius:6px;color:#8b8f98;font-size:12px;background:#1a1b1f}
+.bd{display:inline-block;font-size:12px;padding:3px 8px;border-radius:999px;background:#23252b;color:#c9ccd3}
+.bd.ok{background:rgba(94,224,176,.16);color:#5ee0b0;font-weight:700}
+.ab-pop{border:1px solid #2c2e34;border-radius:10px;background:#1a1b1f;padding:10px 12px;display:grid;gap:5px;font-size:12px}
+.ab-pop>b{font-size:13px;color:#ececf1}
+.ab-pop>small{font-size:11px;color:#8b8f98;margin-bottom:3px}
+.ab-pop .r{display:flex;justify-content:space-between;gap:8px;border:1px solid #2c2e34;border-radius:8px;padding:6px 9px;background:#111214;color:#ececf1}
+.ab-pop .r i{font-style:normal;color:#8b8f98;font-size:11px;margin-right:5px}
+.ab-pop .r em{font-style:normal;font-size:11px;color:#8b8f98;white-space:nowrap}
+.ab-pop .r em.y{color:#5ee0b0;font-weight:700}
+.ab-pop .r u{text-decoration:none;color:#8b8f98;font-weight:400}
+.ab-ovl{background:rgba(40,36,30,.9);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:10px 14px;display:grid;gap:6px}
+.ab-ovl .hd{display:flex;align-items:center;gap:6px;font-size:13px;color:#ffb3c7}
+.ab-ovl .hrt{color:#ff7aa2}
+.ab-ovl .ln{font-size:14px;color:#f4f4f5}
+.sw{display:inline-grid;justify-items:end}
+.sw>*{grid-area:1/1}
+.ab-grid .sw{justify-items:center}
+.sw .sa{animation:swa 6s linear infinite}
+.sw .sb{animation:swb 6s linear infinite}
+@keyframes swa{0%,34.9%{opacity:1}35%,100%{opacity:0}}
+@keyframes swb{0%,34.9%{opacity:0;transform:none}35%{opacity:1;transform:scale(1.15)}39%,100%{opacity:1;transform:none}}
+.ab-ovl{animation:ovin 6s ease-out infinite}
+@keyframes ovin{0%,37%{opacity:0;transform:translateY(6px)}43%,96%{opacity:1;transform:none}100%{opacity:0}}
+.lg-chart em{transform-origin:bottom;animation:lgrow 6s ease-out infinite}
+.lg-chart .b:nth-child(2) em{animation-delay:.08s}.lg-chart .b:nth-child(3) em{animation-delay:.16s}.lg-chart .b:nth-child(4) em{animation-delay:.24s}.lg-chart .b:nth-child(5) em{animation-delay:.32s}.lg-chart .b:nth-child(6) em{animation-delay:.4s}.lg-chart .b:nth-child(7) em{animation-delay:.48s}
+@keyframes lgrow{0%{transform:scaleY(0)}18%,94%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){.sw .sa{animation:none;opacity:0}.sw .sb,.ab-ovl,.lg-chart em{animation:none}}
+@media (min-width:861px){.feat.pair p{min-height:calc(1.7em * 4)}.feat.pair .ledger{flex:1 1 0;min-height:0;overflow:hidden;position:relative;align-content:start}.feat.pair .ledger::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(to bottom,rgba(17,18,20,0),#111214 85%);pointer-events:none}}
 </style>
 </head>
 <body>
@@ -268,11 +349,11 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
       </article>
       <article class="feat">
         <div class="ft"><span class="ic">✚</span><h3>커스텀 관리</h3></div>
-        <p>어비스 아티, 시련, 시즌 점수 11,000점 달성, 이벤트 아이템처럼 따로 챙기고 싶은 나만의 관리 항목을 직접 추가해서 캐릭터마다 체크할 수 있어요.</p>
+        <p>오드 구매, 시련, 시즌 점수 11,000점 달성, 이벤트 아이템처럼 따로 챙기고 싶은 나만의 관리 항목을 직접 추가해서 캐릭터마다 체크할 수 있어요.</p>
         <div class="cgrid"><table>
           <thead><tr><th></th><th>데바냥</th><th>데바1</th><th>데바2</th></tr></thead>
           <tbody>
-            <tr><td>어비스 아티 (하층)</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb"></span></td></tr>
+            <tr><td>오드 구매</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb"></span></td></tr>
             <tr><td>시련</td><td><span class="cb a1">✓</span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
             <tr><td>시즌 점수 11,000점</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb a3">✓</span></td></tr>
             <tr><td>이벤트 아이템 교환</td><td><span class="cb"></span></td><td><span class="cb a2">✓</span></td><td><span class="cb"></span></td></tr>
@@ -299,6 +380,40 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
           <span class="sc"><i>슈고</i><b>1회 <em class="v">(+26회)</em></b></span>
           <span class="sc"><i>차원 침공</i><b>0회</b></span>
           <span class="sc wide"><i class="acc">계정 자원</i><i>오드 전체</i><b>43,930</b><i>키나</i><b>31,511,078</b></span>
+        </div>
+      </article>
+      <article class="feat pair">
+        <div class="ft"><span class="ic">₭</span><h3>키나 장부</h3></div>
+        <p>캐릭터마다 키나가 언제 얼마나 늘고 줄었는지 저절로 적어 둬요. 오늘·7일·30일 동안 번 키나를 던전 보상, 거래소, 그 외로 나눠서 보여 줘요.</p>
+        <div class="ledger">
+          <div class="lg-top"><b>키나 장부</b><span class="lg-tabs"><span>오늘</span><span class="on">7일</span><span>30일</span></span></div>
+          <div class="lg-now"><small>지금 보유 · 계정 전체</small><div><b>516,065,220</b><span class="up">▲ +41,300,000</span><small>(7일)</small></div></div>
+          <div class="lg-kpi"><span><small>획득</small><b class="up">+124,500,000</b></span><span><small>사용</small><b class="dn">−83,200,000</b></span><span><small>변화량</small><b>+41,300,000</b></span></div>
+          <div class="lg-h">일별 순변화<small>최근 7일 · 일반 키나</small></div>
+          <div class="lg-chart" aria-hidden="true"><span class="b"><em style="height:67%"></em><i>금</i></span><span class="b"><em style="height:38%"></em><i>토</i></span><span class="b"><em style="height:93%"></em><i>일</i></span><span class="b"><em style="height:18%"></em><i>월</i></span><span class="b"><em style="height:11%"></em><i>화</i></span><span class="b"><em style="height:53%"></em><i>수</i></span><span class="b now"><em style="height:65%"></em><i>목</i></span></div>
+          <div class="lg-h">어디서 벌었나</div>
+          <div class="lg-bar" aria-hidden="true"><span class="d" style="width:62%"></span><span class="x" style="width:30%"></span><span class="o" style="width:8%"></span></div>
+          <div class="lg-leg"><span><em class="d"></em>던전 보상 77,200,000</span><span><em class="x"></em>거래소 37,300,000</span><span><em class="o"></em>그 외 10,000,000</span></div>
+          <div class="lg-h">캐릭터별</div>
+          <div class="lg-tbl"><table><thead><tr><th>캐릭터</th><th>획득</th><th>사용</th><th>순변화</th></tr></thead><tbody><tr><td>데바냥</td><td class="up">+62,300,000</td><td class="dn">−40,100,000</td><td>+22,200,000</td></tr><tr><td>데바1</td><td class="up">+38,900,000</td><td class="dn">−29,600,000</td><td>+9,300,000</td></tr><tr><td>데바2</td><td class="up">+23,300,000</td><td class="dn">−13,500,000</td><td>+9,800,000</td></tr></tbody></table></div>
+        </div>
+      </article>
+      <article class="feat pair">
+        <div class="ft"><span class="ic">⚑</span><h3>어비스 회랑 자동 체크</h3><span class="lab">실험실 · 테스트 중</span></div>
+        <p>우리 진영이 점령한 회랑에 들어가면 관리표에 저절로 체크하고 게임 위에도 알려 줘요. 점령전·보스·나흐마 일정도 관리표 맨 위에서 보여 주고, 기록은 수·토요일 점령전 시간에 새로 시작해요. 설정 &gt; 실험실에서 켜면 써 볼 수 있어요.</p>
+        <div class="abyss">
+          <div class="ab-pill"><span class="t">어비스</span><span class="i"><i>점령전</i><b>수·토 22:20</b></span><span class="i"><i>보스</i><b>수·토 22:45</b></span><span class="i nx"><i>나흐마</i><b>금·일 23:00</b></span><span class="left">나흐마 1일 5시간 뒤</span></div>
+          <div class="ab-grid"><table>
+            <thead><tr><th>항목</th><th>데바냥</th><th>데바1</th><th>데바2</th></tr></thead>
+            <tbody><tr><td><span class="lb">어비스 회랑 <span class="gear">⚙</span></span></td><td><span class="bd ok">✓ 완료</span></td><td><span class="sw"><span class="bd sa">○ 미완료 · 3/4</span><span class="bd ok sb">✓ 완료</span></span></td><td><span class="bd">○ 미완료 · 0/4</span></td></tr></tbody>
+          </table></div>
+          <div class="ab-ovl"><div class="hd"><span class="hrt">♥</span>데바로그가 방금 기록했어요</div><div class="ln">데바1｜어비스 회랑 - 오염된 늪지 입장 완료</div></div>
+          <div class="ab-pop"><b>데바1 · 어비스 회랑 <span class="sw"><span class="sa">3/4</span><span class="sb">4/4</span></span></b><small>다음 초기화 토 22:20 · 줄을 누르면 직접 바꿀 수 있어요</small>
+            <span class="r"><span><i>하층</i>에레슈란타의 뿌리</span><em class="y">✓입장함 <u>자동</u></em></span>
+            <span class="r"><span><i>하층</i>시엘의 날개 군도</span><em class="y">✓입장함 <u>자동</u></em></span>
+            <span class="r"><span><i>중층</i>침식된 중앙섬</span><em class="y">✓입장함 <u>자동</u></em></span>
+            <span class="r"><span><i>중층</i>오염된 늪지</span><span class="sw"><em class="sa">미완료</em><em class="y sb">✓입장함 <u>자동</u></em></span></span>
+          </div>
         </div>
       </article>
     </div>
