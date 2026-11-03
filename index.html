@@ -280,6 +280,31 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
 @keyframes lgrow{0%{transform:scaleY(0)}18%,94%{transform:scaleY(1)}100%{transform:scaleY(0)}}
 @media (prefers-reduced-motion:reduce){.sw .sa{animation:none;opacity:0}.sw .sb,.ab-ovl,.lg-chart em{animation:none}}
 @media (min-width:861px){.feat.pair p{min-height:calc(1.7em * 4)}.feat.pair .ledger{flex:1 1 0;min-height:0;overflow:hidden;position:relative;align-content:start}.feat.pair .ledger::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(to bottom,rgba(17,18,20,0),#111214 85%);pointer-events:none}}
+
+.eng{color:var(--dim);font-weight:300;font-size:.9em}
+.ovl.rec{background:rgba(40,36,30,.9);border-color:rgba(255,255,255,.14);padding:10px 14px}
+.ovl.rec .hd{display:flex;align-items:center;gap:6px;font-size:13px;color:#ffb3c7}
+.ovl.rec .hrt{color:#ff7aa2}
+.ovl.rec .ln{font-size:14px;color:#f4f4f5}
+.ovl.rec .ln.n1,.ovl.rec .ln.n2,.ovl.rec .ln.n3{animation:6s linear infinite}
+.ovl.rec .ln.n1{animation-name:tn1}.ovl.rec .ln.n2{animation-name:tn2}.ovl.rec .ln.n3{animation-name:tn3}
+.sc .gold{color:var(--gold)}.sc .warn{color:#ffb070}
+.bd .m,.wk .m{color:#5ee0b0}.bd .r{color:#ff8a8a}
+.bd b{font-weight:700}
+.feats[data-new],.feats+.feats{margin-top:14px}
+.ct{font-size:13px;color:var(--sub)}
+.wk{font-size:12px;color:#c9ccd3;white-space:nowrap}
+.dz{margin-top:auto;background:#0f0c20;border-radius:12px;padding:12px;display:grid;gap:10px;font-size:13px}
+.dz-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dz-l{color:var(--sub);min-width:64px}
+.seg{display:inline-flex;border:1px solid #3a3470;border-radius:8px;overflow:hidden}
+.seg span{padding:4px 12px;color:var(--dim)}
+.seg .on{background:var(--mint);color:#141129;font-weight:700}
+.dz-prev{display:grid;gap:4px;border-top:1px solid #ffffff12;padding-top:10px}
+.dz-prev .f1{font-size:13px;font-family:"Noto Sans KR",sans-serif}
+.dz-prev .f2{font-size:15px;font-family:var(--px)}
+.dz-prev .f3{font-size:17px;font-family:"Noto Sans KR",sans-serif;font-weight:300}
+@media (prefers-reduced-motion:reduce){.ovl.rec .ln{animation:none!important}}
 </style>
 </head>
 <body>
@@ -310,26 +335,29 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
         <tr><td>침식의 정화소</td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag no">미완료</span></td></tr>
         <tr><td>무스펠</td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag no">미완료</span></td><td><span class="tag ok">완료</span></td></tr>
         <tr><td>비탄의 설원</td><td><span class="tag no">미완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td></tr>
+        <tr data-new><td>어비스 회랑</td><td><span class="tag ok">완료</span></td><td><span class="tag no">하층 2/2 · 중층 0/1</span></td><td><span class="tag ok">완료</span></td><td><span class="tag no">하층 0/2 · 중층 0/1</span></td></tr>
+        <tr data-new><td>시련</td><td><span class="tag ok">완료</span></td><td><span class="tag ok">완료</span></td><td><span class="tag no">미완료</span></td><td><span class="tag ok">완료</span></td></tr>
+        <tr data-new><td>주간 오드</td><td><span class="tag ok">완료</span></td><td>상점 4/4 · 변환 2/4</td><td><span class="tag ok">완료</span></td><td>상점 0/4 · 변환 0/4</td></tr>
         <tr><td>히든 큐브 열쇠</td><td>2개</td><td>0개</td><td>3개</td><td>1개</td></tr>
         <tr><td>강화석</td><td>78.2만</td><td>11.3만</td><td>21.1만</td><td>4.6만</td></tr>
-        <tr><td>키나</td><td>5,893,877</td><td>4,368,374</td><td>2,379,231</td><td>10,000,000</td></tr>
+        <tr data-new><td>키나</td><td>589만 <span class="eng">(12만)</span></td><td>436만 <span class="eng">(3.5만)</span></td><td>237만 <span class="eng">(8,200)</span></td><td>1,000만</td></tr>
       </tbody>
     </table></div>
-    <div class="cap">관리표 예시 (캐릭터 이름과 숫자는 예시). 빨간 칸은 꽉 차서 버려질 위험이 있는 횟수예요.</div>
+    <div class="cap">관리표 예시 (캐릭터 이름과 숫자는 예시). 빨간 칸은 꽉 차서 버려질 위험이 있는 횟수예요. 키나 괄호 안은 각인 키나예요.</div>
   </section>
 
   <div class="side">
     <section class="box" id="dl">
       <h2>다운로드</h2>
-      <div class="ver">최신 v1.0.36 · 2026.10.12</div>
+      <div class="ver">최신 v1.0.69 · 2026.11.04</div>
       <a class="dlbtn" href="https://github.com/dalmang-e/DevaLog-Releases/releases/latest">▶ 설치 파일 받기</a>
       <div class="req"><b>먼저 설치</b>Npcap (무료). 없으면 자동 기록이 동작하지 않아요.</div>
       <dl class="spec"><dt>운영체제</dt><dd>Windows 10 / 11 (64비트)</dd></dl>
     </section>
   <section class="box notes" id="notes">
     <h2>패치노트</h2>
-    <div class="rels"><div class="rel"><span class="v">v1.0.36 · 2026.10.12</span><ul><li>컴퓨터 시작 시 자동 실행: [켜기]를 눌러도 [끄기]로 다시 보이던 문제를 고쳤어요</li><li>키나 장부를 연 채로 설정을 열면 설정이 장부 뒤에 가려지던 문제를 고쳤어요</li><li>'친구에게 소개하기'가 새 홈페이지 주소를 복사해요</li></ul></div>
-    <div class="rel"><span class="v">v1.0.35 · 2026.10.12</span><ul><li>컴퓨터 시작 시 자동 실행: 설정 &gt; 알림 및 오버레이에서 켜고 끌 수 있어요(처음 설치할 때도 고를 수 있어요)</li><li>알림 및 오버레이 설정 화면을 보기 쉽게 정리했어요</li><li>키나 장부: 초월 보상으로 받은 키나도 '던전 보상'으로 집계해요</li></ul></div></div>
+    <div class="rels"><div class="rel"><span class="v">v1.0.69 · 2026.11.04</span><ul><li>컴퓨터 시작 시 자동 실행 설정이 Windows의 실제 상태와 다르게 표시되던 문제를 수정했습니다.</li><li>사명 완료 횟수가 반영되지 않았을 때 원인을 확인할 수 있도록 문제 신고 기록을 보강했습니다.</li></ul></div>
+    <div class="rel"><span class="v">v1.0.68 · 2026.11.02</span><ul><li>간헐적으로 일부 창고 키나 이동이 장부 수입으로 계산되던 문제를 개선했습니다.</li><li>계정 전환 중 다른 계정의 멤버십 기간이 저장될 수 있는 문제를 수정했습니다.</li></ul></div></div>
     <a class="more" href="https://github.com/dalmang-e/DevaLog-Releases/releases" target="_blank" rel="noopener">전체 패치노트 보기 →</a>
   </section>
   </div>
@@ -340,28 +368,29 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
       <article class="feat">
         <div class="ft"><span class="ic">⟳</span><h3>알아서 기록</h3></div>
         <p>던전, 우편, 아이템 사용처럼 숫자가 바뀌는 순간을 알아채서 관리표를 바로 고치고, 게임 위에 이렇게 알려 줘요. 확실하지 않으면 혼자 정하지 않고 먼저 물어봐요.</p>
-        <div class="ovl">
-          <div class="toast"><div class="th"><span class="ck">✓</span><span class="tl">자동 반영</span><span class="tt">각성전 0(+28) → 0(+27)회</span></div></div>
-          <div class="toast n1"><div class="th"><span class="ck">✓</span><span class="tl">자동 반영</span><span class="tt">오드 에너지(각인) +4개</span></div><div class="tc"><span>66개 보유 중</span></div></div>
-          <div class="toast n2"><div class="th"><span class="ck">✓</span><span class="tl">자동 반영</span><span class="tt">작은 오드 에너지(각인) 2개 사용</span></div><div class="tc"><span>79 → 77개</span></div></div>
-          <div class="toast n3"><div class="th"><span class="ck">✓</span><span class="tl">자동 반영</span><span class="tt">무스펠 완료</span></div></div>
+        <div class="ovl rec" data-new>
+          <div class="hd"><span class="hrt">♥</span>데바로그가 방금 기록했어요</div>
+          <div class="ln">데바냥｜각성전 0(+28) → 0(+27)회</div>
+          <div class="ln n1">데바냥｜오드 에너지(각인) +4개 · 66개 보유 중</div>
+          <div class="ln n2">데바냥｜시련 완료</div>
+          <div class="ln n3">데바냥｜어비스 회랑 - 침식된 중앙섬 입장 완료</div>
         </div>
       </article>
       <article class="feat">
         <div class="ft"><span class="ic">✚</span><h3>커스텀 관리</h3></div>
-        <p>오드 구매, 시련, 시즌 점수 11,000점 달성, 이벤트 아이템처럼 따로 챙기고 싶은 나만의 관리 항목을 직접 추가해서 캐릭터마다 체크할 수 있어요.</p>
+        <p data-new>시즌 점수 11,000점 달성, 이벤트 아이템 교환처럼 따로 챙기고 싶은 나만의 관리 항목을 직접 추가해서 캐릭터마다 체크할 수 있어요. 체크 대신 글자를 적는 칸으로도 만들 수 있어요.</p>
         <div class="cgrid"><table>
           <thead><tr><th></th><th>데바냥</th><th>데바1</th><th>데바2</th></tr></thead>
           <tbody>
-            <tr><td>오드 구매</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb"></span></td></tr>
-            <tr><td>시련</td><td><span class="cb a1">✓</span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+            <tr data-new><td>이벤트 출석</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb a1">✓</span></td></tr>
+            <tr data-new><td>다음 목표</td><td><span class="ct">날개 강화</span></td><td><span class="ct">장비 교체</span></td><td><span class="ct">-</span></td></tr>
             <tr><td>시즌 점수 11,000점</td><td><span class="cb on">✓</span></td><td><span class="cb on">✓</span></td><td><span class="cb a3">✓</span></td></tr>
             <tr><td>이벤트 아이템 교환</td><td><span class="cb"></span></td><td><span class="cb a2">✓</span></td><td><span class="cb"></span></td></tr>
           </tbody></table></div>
       </article>
       <article class="feat">
         <div class="ft"><span class="ic">▣</span><h3>게임 위 작은 창</h3></div>
-        <p>게임 화면 구석에 지금 접속한 캐릭터와 슈고 열쇠, 차원 침공 열쇠, 오드가 늘 떠 있어요. 창을 바꾸지 않아도 바로 확인할 수 있어요.</p>
+        <p data-new>게임 화면 구석에 지금 접속한 캐릭터와 슈고 열쇠, 차원 침공 열쇠, 오드가 늘 떠 있어요. 투명도를 바꾸거나 게임 화면에서만 보이게 할 수 있고, Ctrl+Alt+H로 바로 숨길 수도 있어요.</p>
         <div class="hud">
           <div class="hud-h"><span class="ocat" aria-hidden="true"><svg viewBox="0 0 16 16" width="28" height="28" shape-rendering="crispEdges"><defs><linearGradient id="ocat-fur" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b6f5dd"/><stop offset="0.55" stop-color="#8be9c8"/><stop offset="1" stop-color="#8f9bff"/></linearGradient></defs><g class="ocat-b"><rect x="3" y="2" width="1" height="1"/><rect x="3" y="3" width="2" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="10" y="3" width="2" height="1"/><rect x="3" y="4" width="9" height="4"/><rect x="4" y="8" width="8" height="3"/><rect x="12" y="7" width="1" height="3"/><rect x="13" y="6" width="1" height="2"/><rect x="5" y="11" width="2" height="2"/><rect x="9" y="11" width="2" height="2"/><rect class="e" x="5" y="5" width="1" height="2"/><rect class="e" x="9" y="5" width="1" height="2"/><rect class="n" x="7" y="6" width="1" height="1"/></g></svg></span><b>데바냥</b><span>관리 중</span><span class="dots"><span>·</span><span>·</span><span>·</span></span><span class="lock">🔒</span></div>
           <div class="hud-r">
@@ -369,22 +398,24 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
             <span class="ri"><img src="assets/inv.png" alt="차원 침공 열쇠">0</span>
             <span class="ri"><img src="assets/od.png" alt="오드 에너지">35 <em class="v">(+1995)</em> <em class="m">(+2640)</em></span>
           </div>
-          <div class="hud-p">CPU 0.1% · RAM 154MB</div>
         </div>
       </article>
       <article class="feat">
         <div class="ft"><span class="ic">◆</span><h3>계정 공유 자원</h3></div>
-        <p>사명, 슈고, 차원 침공처럼 계정 전체가 함께 쓰는 횟수와 계정 전체 오드·키나 합계를 관리표 맨 위 한 줄에 모아요.</p>
+        <p data-new>사명, 슈고, 차원 침공, 일일던전처럼 함께 쓰는 횟수와 멤버십, 원정·초월 키나 획득률, 계정 전체 오드·키나 합계를 관리표 맨 위에 모아요.</p>
         <div class="strip">
           <span class="sc"><i>사명</i><b>5회 완료</b></span>
           <span class="sc"><i>슈고</i><b>1회 <em class="v">(+26회)</em></b></span>
           <span class="sc"><i>차원 침공</i><b>0회</b></span>
+          <span class="sc" data-new><i>일일던전</i><b>9회 <em class="v">(+3회)</em></b></span>
+          <span class="sc" data-new><i>멤버십</i><b class="gold">✦ 이용 중</b></span>
+          <span class="sc wide" data-new><i class="acc">키나 획득률</i><i>원정</i><b>100%</b><i>38회</i><i>초월</i><b class="warn">80%</b><i>58회</i></span>
           <span class="sc wide"><i class="acc">계정 자원</i><i>오드 전체</i><b>43,930</b><i>키나</i><b>31,511,078</b></span>
         </div>
       </article>
       <article class="feat pair">
         <div class="ft"><span class="ic">₭</span><h3>키나 장부</h3></div>
-        <p>캐릭터마다 키나가 언제 얼마나 늘고 줄었는지 저절로 적어 둬요. 오늘·7일·30일 동안 번 키나를 던전 보상, 거래소, 그 외로 나눠서 보여 줘요.</p>
+        <p>캐릭터마다 키나가 언제 얼마나 늘고 줄었는지 저절로 적어 둬요. 오늘·7일·30일 동안 번 키나를 던전 보상, 거래소, 그 외로 나눠서 보여 줘요. <span data-new>창고에 넣고 뺀 키나는 번 돈이나 쓴 돈으로 세지 않아요.</span></p>
         <div class="ledger">
           <div class="lg-top"><b>키나 장부</b><span class="lg-tabs"><span>오늘</span><span class="on">7일</span><span>30일</span></span></div>
           <div class="lg-now"><small>지금 보유 · 계정 전체</small><div><b>516,065,220</b><span class="up">▲ +41,300,000</span><small>(7일)</small></div></div>
@@ -399,13 +430,13 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
         </div>
       </article>
       <article class="feat pair">
-        <div class="ft"><span class="ic">⚑</span><h3>어비스 회랑 자동 체크</h3><span class="lab">실험실 · 테스트 중</span></div>
-        <p>우리 진영이 점령한 회랑에 들어가면 관리표에 저절로 체크하고 게임 위에도 알려 줘요. 점령전·보스·나흐마 일정도 관리표 맨 위에서 보여 주고, 기록은 수·토요일 점령전 시간에 새로 시작해요. 설정 &gt; 실험실에서 켜면 써 볼 수 있어요.</p>
+        <div class="ft"><span class="ic">⚑</span><h3>어비스 회랑 자동 체크</h3></div>
+        <p data-new>우리 진영이 점령한 회랑에 들어가면 관리표에 저절로 체크하고 게임 위에도 알려 줘요. 점령전·보스·나흐마 일정은 업데이트 공지에서 알아서 가져와 관리표 맨 위에 보여 주고, 기록은 수·토요일 점령전 시간에 새로 시작해요. 아이템 레벨이 모자라 못 들어가는 층은 따로 알려 줘요.</p>
         <div class="abyss">
           <div class="ab-pill"><span class="t">어비스</span><span class="i"><i>점령전</i><b>수·토 22:20</b></span><span class="i"><i>보스</i><b>수·토 22:45</b></span><span class="i nx"><i>나흐마</i><b>금·일 23:00</b></span><span class="left">나흐마 1일 5시간 뒤</span></div>
           <div class="ab-grid"><table>
             <thead><tr><th>항목</th><th>데바냥</th><th>데바1</th><th>데바2</th></tr></thead>
-            <tbody><tr><td><span class="lb">어비스 회랑 <span class="gear">⚙</span></span></td><td><span class="bd ok">✓ 완료</span></td><td><span class="sw"><span class="bd sa">○ 미완료 · 3/4</span><span class="bd ok sb">✓ 완료</span></span></td><td><span class="bd">○ 미완료 · 0/4</span></td></tr></tbody>
+            <tbody><tr><td><span class="lb">어비스 회랑 <span class="gear">⚙</span></span></td><td><span class="bd ok">✓ 완료</span></td><td><span class="sw"><span class="bd sa">하층 <b class="m">2/2</b>  중층 1/2</span><span class="bd ok sb">✓ 완료</span></span></td><td><span class="bd">하층 0/2  중층 <b class="r">미달</b></span></td></tr></tbody>
           </table></div>
           <div class="ab-ovl"><div class="hd"><span class="hrt">♥</span>데바로그가 방금 기록했어요</div><div class="ln">데바1｜어비스 회랑 - 오염된 늪지 입장 완료</div></div>
           <div class="ab-pop"><b>데바1 · 어비스 회랑 <span class="sw"><span class="sa">3/4</span><span class="sb">4/4</span></span></b><small>다음 초기화 토 22:20 · 줄을 누르면 직접 바꿀 수 있어요</small>
@@ -417,18 +448,51 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
         </div>
       </article>
     </div>
+    <div class="feats" data-new>
+      <article class="feat">
+        <div class="ft"><span class="ic">✔</span><h3>시련·주간 오드 자동 체크</h3></div>
+        <p>시련 주화를 받으면 그 주 시련을 완료로 체크해요. 게임에서 산들바람상회나 물질변환 화면을 열면 캐릭터마다 이번 주 주간 오드를 몇 번 샀는지·바꿨는지(4회씩) 맞춰 줘요. 둘 다 매주 수요일 오전 5시에 새로 시작해요.</p>
+        <div class="cgrid"><table>
+          <thead><tr><th></th><th>데바냥</th><th>데바1</th><th>데바2</th></tr></thead>
+          <tbody>
+            <tr><td>시련</td><td><span class="bd ok">✓ 완료</span></td><td><span class="sw"><span class="bd sa">미완료</span><span class="bd ok sb">✓ 완료</span></span></td><td><span class="bd">미완료</span></td></tr>
+            <tr><td>주간 오드</td><td><span class="bd ok">✓ 완료</span></td><td><span class="wk">상점 <b class="m">4/4</b> 변환 2/4</span></td><td><span class="wk">상점 0/4 변환 0/4</span></td></tr>
+          </tbody></table></div>
+      </article>
+      <article class="feat">
+        <div class="ft"><span class="ic">Aa</span><h3>내 눈에 편하게</h3></div>
+        <p>설정 &gt; 디자인에서 어두운·밝은 테마와 글꼴, 글자 굵기, 글자 크기를 고를 수 있어요. 관리표와 게임 위 작은 창에 함께 적용돼요.</p>
+        <div class="dz">
+          <div class="dz-row"><span class="dz-l">테마</span><span class="seg"><span class="on">어둡게</span><span>밝게</span></span></div>
+          <div class="dz-row"><span class="dz-l">글자 크기</span><span class="seg"><span>작게</span><span class="on">보통</span><span>크게</span></span></div>
+          <div class="dz-prev"><span class="f1">데바냥 · 악몽 14회</span><span class="f2">데바냥 · 악몽 14회</span><span class="f3">데바냥 · 악몽 14회</span></div>
+        </div>
+      </article>
+    </div>
     <div class="feats3">
       <article class="feat">
         <div class="ft"><span class="ic">☰</span><h3>통합 관리표</h3></div>
-        <p>모든 캐릭터를 한 표에서 나란히 비교해요. 계정은 최대 2개까지 등록해 탭으로 오갈 수 있어요.</p>
+        <p>모든 캐릭터를 한 표에서 나란히 비교해요. 계정은 <span data-new>최대 3개</span>까지 등록해 탭으로 오갈 수 있어요.</p>
       </article>
       <article class="feat">
         <div class="ft"><span class="ic">✦</span><h3>가방 속 오드까지</h3></div>
-        <p>가방에 쌓아 둔 오드 아이템을 충전량으로 바꿔 더해 보여 줘요. 사용 기간이 정해진 오드가 몇 개인지도 따로 볼 수 있어요.</p>
+        <p>가방에 쌓아 둔 오드 아이템을 충전량으로 바꿔 더해 보여 줘요. 사용 기간이 정해진 오드가 몇 개인지 따로 볼 수 있고, <span data-new>기간이 끝나면 저절로 빼요.</span></p>
       </article>
       <article class="feat warn">
         <div class="ft"><span class="ic">!</span><h3>손실 경고</h3></div>
-        <p>악몽처럼 꽉 차서 다음 충전이 버려질 횟수를 미리 빨갛게 알려 줘요.</p>
+        <p>악몽<span data-new>, 일일던전</span>처럼 꽉 차서 다음 충전이 버려질 횟수를 미리 빨갛게 알려 줘요.</p>
+      </article>
+      <article class="feat" data-new>
+        <div class="ft"><span class="ic">✎</span><h3>캐릭터 메모</h3></div>
+        <p>캐릭터마다 메모를 여러 줄로 남겨 둘 수 있어요. 관리표에서 바로 보이고, 눌러서 바로 고칠 수 있어요.</p>
+      </article>
+      <article class="feat" data-new>
+        <div class="ft"><span class="ic">⇅</span><h3>보고 싶은 줄만</h3></div>
+        <p>설정 &gt; 관리표 &gt; 표시할 줄에서 줄을 숨기거나 순서를 바꿀 수 있어요. 어비스 포인트 줄도 여기서 켜요.</p>
+      </article>
+      <article class="feat" data-new>
+        <div class="ft"><span class="ic">?</span><h3>앱에서 바로 신고</h3></div>
+        <p>값이 이상하면 설정 &gt; 버그 제보 &gt; [신고하기]를 눌러 주세요. 원인을 찾는 데 필요한 기록이 함께 보내져요.</p>
       </article>
     </div>
   </section>
@@ -446,13 +510,13 @@ em{font-style:normal}.v{color:#9aa4ff}.m{color:#8be9c8}
   <section class="box full" id="faq">
     <h2>자주 묻는 질문</h2>
     <dl class="qa">
-      <div><dt>어떤 숙제를 기록하나요?</dt><dd>오드, 악몽, 각성전, 루드라, 무스펠, 침식의 정화소, 비탄의 설원, 슈고, 차원 침공, 사명, 히든 큐브 열쇠, 강화석, 키나처럼 아이온2 캐릭터마다 챙기는 숙제와 재화를 기록해요. 따로 챙기고 싶은 항목은 직접 추가할 수 있어요.</dd></div>
+      <div><dt>어떤 숙제를 기록하나요?</dt><dd data-new>오드, 악몽, 각성전, 루드라, 무스펠, 침식의 정화소, 비탄의 설원, 어비스 회랑, 시련, 주간 오드, 일일던전, 슈고, 차원 침공, 사명, 멤버십, 히든 큐브 열쇠, 강화석, 어비스 포인트, 키나처럼 아이온2 캐릭터마다 챙기는 숙제와 재화를 기록해요. 따로 챙기고 싶은 항목은 직접 추가할 수 있어요.</dd></div>
       <div><dt>무료인가요?</dt><dd>네. 무료 Windows 프로그램이에요. 여러 계정과 캐릭터의 아이온2 숙제를 한 표에서 관리할 수 있어요.</dd></div>
       <div><dt>배럭(부캐) 숙제도 자동으로 체크되나요?</dt><dd>네. 관리표에 캐릭터를 등록해 두면, 그 캐릭터로 게임하는 동안 데바로그가 감지한 숙제 횟수·오드·키나 변화를 그 캐릭터 줄에 기록해요. 캐릭터를 바꿔 접속하기만 해서 모든 숙제가 한 번에 맞춰지지는 않으니, 감지되지 않은 값은 관리표에서 직접 고쳐 주세요.</dd></div>
       <div><dt>게임 계정 정보를 입력하나요?</dt><dd>아니요. 캐릭터 서버와 이름만 입력해요.</dd></div>
       <div><dt>게임을 대신 조작하나요?</dt><dd>아니요. 키보드나 마우스를 대신 누르지 않아요.</dd></div>
       <div><dt>기록은 어디에 저장되나요?</dt><dd>내 PC 안에만 저장돼요.</dd></div>
-      <div><dt>값이 틀리게 들어갔어요.</dt><dd>관리표에서 칸을 눌러 바로 고칠 수 있어요. 반복되면 설정 → 버그제보 → [신고하기]로 알려 주세요.</dd></div>
+      <div><dt>값이 틀리게 들어갔어요.</dt><dd>관리표에서 칸을 눌러 바로 고칠 수 있어요. 반복되면 설정 → 버그 제보 → [신고하기]로 알려 주세요.</dd></div>
       <div><dt>공식 프로그램인가요?</dt><dd>아니요. 개인이 만든 비공식 팬 프로그램이에요.</dd></div>
     </dl>
   </section>
